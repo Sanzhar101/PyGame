@@ -19,7 +19,7 @@ character_rect = character_image.get_rect()
 
 # set initial character position
 character_rect.x = 350
-character_rect.y = 50
+character_rect.y = 450
 
 # movement speed
 speed = 5
