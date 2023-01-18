@@ -3,11 +3,11 @@ import pygame
 # initialize pygame
 pygame.init()
 
-# set screen size
+# screen size
 size = (1016, 680)
 screen = pygame.display.set_mode(size)
 
-# set title
+#title
 pygame.display.set_caption("My Game")
 
 # load character and background images
@@ -19,7 +19,7 @@ character_rect = character_image.get_rect()
 
 # set initial character position
 character_rect.x = 350
-character_rect.y = 250
+character_rect.y = 50
 
 # movement speed
 speed = 5
