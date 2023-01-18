@@ -37,7 +37,7 @@ while not done:
         if event.type == pygame.QUIT:  # user clicked close
             done = True
 
-    # --- Game logic should go here
+    # --- Game logic 
     keys = pygame.key.get_pressed()
 
     if keys[pygame.K_LEFT]:
@@ -45,20 +45,19 @@ while not done:
     if keys[pygame.K_RIGHT]:
         character_rect.x += speed
 
-    # --- Drawing code should go here
+    # --- Drawing code 
 
-    # First, clear the screen to white. Don't put other drawing commands
-    # above this, or they will be erased with this command.
+
     screen.blit(background_image,(0,0))
 
     # draw character
     screen.blit(character_image, character_rect)
 
-    # --- Go ahead and update the screen with what we've drawn.
+   
     pygame.display.flip()
 
     # --- Limit to 60 frames per second
     clock.tick(60)
 
-# Close the window and quit.
+
 pygame.quit()
